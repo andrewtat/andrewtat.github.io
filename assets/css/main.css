@@ -1440,6 +1440,7 @@
 
 			body, input, select, textarea {
 				font-size: 12pt;
+				background-attachment: fixed;
 			}
 
 		}
@@ -2451,6 +2452,14 @@
 				margin-bottom: 0;
 			}
 
+		@media screen and (min-width: 1280px) {
+
+			#wrapper {
+				max-width: 80%;
+			}
+
+		}
+
 		@media screen and (max-width: 1280px) {
 
 			.thumbnails {
@@ -2476,6 +2485,10 @@
 		}
 
 		@media screen and (max-width: 480px) {
+
+			#wrapper {
+				max-width: 95%;
+			}
 
 			.thumbnails {
 				display: block;
@@ -2565,7 +2578,6 @@
 /* Wrapper */
 
 	#wrapper {
-		max-width: 70%;
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 2em;
